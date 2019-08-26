@@ -4,54 +4,62 @@
 
 html,
 body {
-    background-color: #fff;
-    color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /* ----------------------------- */
 /* Elements */
 /* ----------------------------- */
 
-div {overflow: hidden;}
+div {
+  overflow: hidden;
+}
 
 hr {
-    color: #cd6133;
-    border: 1px solid #cd6133;
-    width: 50%;
-    margin-right: 50%;
+  color: #cd6133;
+  border: 1px solid #cd6133;
+  width: 50%;
+  margin-right: 50%;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 /* ----------------------------- */
 /* Components */
 /* ----------------------------- */
 
-.jumbotron {margin-bottom: 0;}
+.jumbotron {
+  margin-bottom: 0;
+}
 
-.head {margin-top: 75px;}
+.head {
+  margin-top: 75px;
+}
 
-.gallery {height: 250px;}
+.gallery {
+  height: 250px;
+}
 
 .bg-gray {
-    background-color: #efefef;
-    border: 1px solid #efefef;
+  background-color: #efefef;
+  border: 1px solid #efefef;
 }
 
 .card-transparent {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
 .portrait-testimonial {
-    height: 400px;
+  height: 400px;
 }
 
 /* ----------------------------- */
@@ -63,53 +71,53 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h1 {
-    color: #fff;
-    word-spacing: 4px;
+  color: #fff;
+  word-spacing: 4px;
 }
 
 .alt-h1:after {
-    display: block;
-    height: 2px;
-    background-color: #cd6133;
-    content: "";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: block;
+  height: 2px;
+  background-color: #cd6133;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .h1-contact {
-    color: #555;
+  color: #555;
 }
 
 h2 {
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 400;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 h2:after {
-    display: block;
-    height: 2px;
-    background-color: #cd6133;
-    content: "";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
+  display: block;
+  height: 2px;
+  background-color: #cd6133;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 h3 {
-    text-align: center;
-    margin-bottom: 15px;
-    letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 0;
 }
 
 /* ----------------------------- */
@@ -117,36 +125,31 @@ h3 {
 /* ----------------------------- */
 
 .sub-head {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 .emphasis {
-    color: #cd6133;
-    letter-spacing: 2px;
-    font-weight: 400;
+  color: #cd6133;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .step {
-    font-size: 110%;
+  font-size: 110%;
 }
 
 .alt-h1 {
-    color: #888;
+  color: #888;
 }
 
 .link-container a {
-    color: #555;
-    text-decoration: none;
-}
-
-.link-container a:hover {
-    color: #cd6133;
+  color: #555;
 }
 
 .small-p {
-    font-size: 90%;
-    line-height: 140%;
-    text-align: center;
+  font-size: 90%;
+  line-height: 140%;
+  text-align: center;
 }
 
 /* ----------------------------- */
@@ -155,44 +158,44 @@ h3 {
 
 .btn-primary,
 .btn-outline-primary {
-    padding: 10px 30px;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
+  padding: 10px 30px;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
 }
 
 .btn-primary {
-    background-color: #cd6133;
-    border: 1px solid #cd6133;
-    color: #fff;
-    margin-right: 15px;
+  background-color: #cd6133;
+  border: 1px solid #cd6133;
+  color: #fff;
+  margin-right: 15px;
 }
 
 .btn-outline-primary {
-    border: 1px solid #cd6133;
-    color: #cd6133;
+  border: 1px solid #cd6133;
+  color: #cd6133;
 }
 
 .btn-primary:hover,
 .btn-primary:active,
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #b2542c;
-    border: 1px solid #b2542c;
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #b2542c;
+  border: 1px solid #b2542c;
 }
 
 #submit-button {
-    float: right;
+  float: right;
 }
 
-input[type=submit] {
-    background-color: #cd6133;
-    border: 1px solid #cd6133;
-    color: #fff;
+input[type="submit"] {
+  background-color: #cd6133;
+  border: 1px solid #cd6133;
+  color: #fff;
 }
 
 /* ----------------------------- */
@@ -200,21 +203,21 @@ input[type=submit] {
 /* ----------------------------- */
 
 .icon-big {
-    font-size: 300%;
-    display: block;
-    color: #cd6133;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 300%;
+  display: block;
+  color: #cd6133;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .icon-step {
-    font-size: 140%;
-    color: #555;
+  font-size: 140%;
+  color: #555;
 }
 
 .quote-icon {
-    color: #555;
+  color: #555;
 }
 
 /* ----------------------------- */
@@ -222,44 +225,44 @@ input[type=submit] {
 /* ----------------------------- */
 
 nav.navbar {
-       -webkit-transition: all 0.4s ease;
-       transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .navbar-logo {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .main-nav {
-    background-color: #fff;
-    background: #fff;
-    box-shadow: 0 2px 2px #efefef;
+  background-color: #fff;
+  background: #fff;
+  box-shadow: 0 2px 2px #efefef;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    color: #555;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .2s;
-    -webkit-transition: border-bottom .2s;
-    -moz-transition: border-bottom .2s;
-    -ms-transition: border-bottom .2s;
-    -o-transition: border-bottom .2s;
+  color: #555;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+  -webkit-transition: border-bottom 0.2s;
+  -moz-transition: border-bottom 0.2s;
+  -ms-transition: border-bottom 0.2s;
+  -o-transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #cd6133;
+  border-bottom: 2px solid #cd6133;
 }
 
 .home-logo {
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
 }
 
 /* ----------------------------- */
@@ -267,19 +270,20 @@ nav.navbar {
 /* ----------------------------- */
 
 .home-header {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imgs/hero.jpg);
 }
 
 .section-aboutus {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(imgs/back-customers.jpg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-    min-height: 450px;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+  min-height: 450px;
 }
 
 /* ----------------------------- */
@@ -287,15 +291,16 @@ nav.navbar {
 /* ----------------------------- */
 
 .cargo-services {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(imgs/cargo.jpg);
-    background-size: cover;
-    color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imgs/hangar.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 .section-plan,
 .section-shipping {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
 /* ----------------------------- */
@@ -303,29 +308,29 @@ nav.navbar {
 /* ----------------------------- */
 
 .head-demo {
-    background: #abbaab;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ffffff, #efefef);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ffffff, #efefef);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #efefef);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #efefef);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-offwhite {
-    background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .card-footer {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
 .head-demo-reverse {
-    background: #abbaab;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ffffff, #efefef);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #ffffff, #efefef);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ffffff, #efefef);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ffffff, #efefef);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* ----------------------------- */
@@ -333,20 +338,20 @@ nav.navbar {
 /* ----------------------------- */
 
 .special-missions {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(imgs/helicopter.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imgs/helicopter.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 .section-features-special {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(imgs/hurricane.jpg);
-    background-size: cover;
-    background-position: center;
-    
-    color: #fff;
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
 }
 
 /* ----------------------------- */
@@ -354,38 +359,42 @@ nav.navbar {
 /* ----------------------------- */
 
 .about-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(imgs/rac-team\ -\ Copy.jpg);
-    background-size: cover;
-    background-position: top;
-    color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imgs/team.jpg);
+  background-size: cover;
+  background-position: top;
+  color: #fff;
 }
 
-.about-lead {width: 67%;}
+.about-lead {
+  width: 67%;
+}
 
 .section-team {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .portrait .gallery {
-    height: 150px;
-    width: 150px;
-    margin-bottom: 20px;
-    border: 2px solid #b2542c;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  margin-bottom: 20px;
+  border: 2px solid #b2542c;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .section-story {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imgs/back-customers.jpg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(imgs/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
 }
 
 /* ----------------------------- */
@@ -393,13 +402,13 @@ nav.navbar {
 /* ----------------------------- */
 
 .coming-soon {
-    height: 100vh;
-    background: #abbaab;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ffffff, #efefef);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ffffff, #efefef);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #efefef);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #efefef);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* ----------------------------- */
@@ -407,11 +416,11 @@ nav.navbar {
 /* ----------------------------- */
 
 .careers {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('imgs/careers.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("imgs/hangar.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 /* ----------------------------- */
@@ -419,23 +428,25 @@ nav.navbar {
 /* ----------------------------- */
 
 .contact-us {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('imgs/control-room.jpg');
-    background-size: cover;
-    background-position: bottom;
-    color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("imgs/control-room.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
 }
 
 /* ----------------------------- */
 /* Quote Form */
 /* ----------------------------- */
 
-.get-quote {background-color: #efefef;}
+.get-quote {
+  background-color: #efefef;
+}
 
 .form-title {
-    text-align: center;
-    color: #cd6133;
-    font-weight: 400;
+  text-align: center;
+  color: #cd6133;
+  font-weight: 400;
 }
 
 /* ----------------------------- */
@@ -443,69 +454,73 @@ nav.navbar {
 /* ----------------------------- */
 
 footer {
-    font-size: 80%;
-    color: #888;
+  font-size: 80%;
+  color: #888;
 }
 
 .footer-text {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.page-footer {background-color: #555;}
+.page-footer {
+  background-color: #555;
+}
 
 .copyright {
-    text-align: center;
+  text-align: center;
 }
 
-.footer-nav {list-style: none;}
+.footer-nav {
+  list-style: none;
+}
 
 .footer-nav li a:link,
 .footer-nav li a:visited {
-    border: 0;
-    text-decoration: none;
-    color: #888;
-    transition: color 0.2s;
+  border: 0;
+  text-decoration: none;
+  color: #888;
+  transition: color 0.2s;
 }
 
 .footer-nav li a:hover {
-    color: #cd6133;
+  color: #cd6133;
 }
 
 .social-nav {
-    list-style: none;
+  list-style: none;
 }
 
 .social-nav li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .social-nav li a:link,
 .social-nav li a:visited {
-    border: 0;
-    text-decoration: none;
-    color: #888;
-    transition: color 0.2s;
-    font-size: 150%;
+  border: 0;
+  text-decoration: none;
+  color: #888;
+  transition: color 0.2s;
+  font-size: 150%;
 }
 
 .facebook,
 .twitter,
 .linkedin {
-    transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .facebook:hover,
 .facebook:active {
-    color: #3b5998;
+  color: #3b5998;
 }
 
 .twitter:hover,
 .twitter:active {
-    color: #00aced;
+  color: #00aced;
 }
 
 .linkedin:hover,
 .linkedin:active {
-    color: #0077b5;
+  color: #0077b5;
 }
