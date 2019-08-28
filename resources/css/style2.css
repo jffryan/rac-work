@@ -298,8 +298,7 @@ nav.navbar {
   color: #fff;
 }
 
-.section-plan,
-.section-shipping {
+.section-plan {
   background-color: #efefef;
 }
 
@@ -436,7 +435,7 @@ nav.navbar {
 }
 
 /* ----------------------------- */
-/* Quote Form */
+/* Quote & Contact Form */
 /* ----------------------------- */
 
 .get-quote {
@@ -447,6 +446,11 @@ nav.navbar {
   text-align: center;
   color: #cd6133;
   font-weight: 400;
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
 }
 
 /* ----------------------------- */

@@ -116,75 +116,85 @@
             <form
               id="contact-form"
               method="POST"
-              action="mailer.php"
+              action="contact.php"
+              role="form"
               class="border rounded p-4"
             >
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Your name"
-                      class="form-control mt-2"
-                      required
-                    />
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="contact_name">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="contact_name"
+                        placeholder="Your name"
+                        class="form-control mt-2"
+                        required="required"
+                        data-error="Name is required."
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Your email"
-                      class="form-control mt-2"
-                      required
-                    />
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="contact_email">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="contact_email"
+                        placeholder="Your email"
+                        class="form-control mt-2"
+                        required="required"
+                        data-error="Email is required."
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="tel">Phone Number</label>
-                    <input
-                      id="tel"
-                      name="tel"
-                      type="tel"
-                      placeholder="Phone"
-                      class="form-control mt-2"
-                      required
-                    />
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="contact_tel">Phone Number</label>
+                      <input
+                        id="contact_tel"
+                        name="tel"
+                        type="tel"
+                        placeholder="Phone"
+                        class="form-control mt-2"
+                        required="required"
+                        data-error="Phone is required."
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                      class="form-control mt-2"
-                    />
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="contact_subject">Subject</label>
+                      <input
+                        type="text"
+                        name="subject"
+                        id="contact_subject"
+                        placeholder="Subject"
+                        class="form-control mt-2"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Additional Message (Optional)"
-                      class="form-control mt-2"
-                      rows="3"
-                    ></textarea>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Additional Message (Optional)"
+                        class="form-control mt-2"
+                        rows="3"
+                      ></textarea>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12 mt-3">
-                  <input type="submit" value="Send" class="form-control" />
+                  <div class="col-12 mt-3">
+                    <input type="submit" value="Send" class="form-control" />
+                  </div>
                 </div>
               </div>
             </form>
@@ -292,5 +302,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+      integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/resources/js/contact.js"></script>
   </body>
 </html>
