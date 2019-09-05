@@ -152,6 +152,10 @@ h3 {
   text-align: center;
 }
 
+.smol-disclaimer {
+  font-size: 70%;
+}
+
 /* ----------------------------- */
 /* Buttons */
 /* ----------------------------- */
@@ -271,10 +275,15 @@ nav.navbar {
 
 .home-header {
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(imgs/hero.jpg);
+  min-height: 75vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(imgs/1037.jpg);
+}
+
+.home-header p {
+  width: 80%;
 }
 
 .section-aboutus {
@@ -338,7 +347,8 @@ nav.navbar {
 
 .special-missions {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(imgs/helicopter.jpg);
+    url(imgs/plane.jpg);
+  min-height: 50vh;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -416,7 +426,7 @@ nav.navbar {
 
 .careers {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("imgs/hangar.jpg");
+    url(imgs/runway.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -428,9 +438,9 @@ nav.navbar {
 
 .contact-us {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("imgs/control-room.jpg");
+    url(imgs/control-room-2.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   color: #fff;
 }
 
