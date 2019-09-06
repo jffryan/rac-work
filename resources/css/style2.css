@@ -350,7 +350,7 @@ nav.navbar {
     url(imgs/plane.jpg);
   min-height: 50vh;
   background-size: cover;
-  background-position: center;
+  background-position: 0% 60%;
   color: #fff;
 }
 
