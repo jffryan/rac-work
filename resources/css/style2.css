@@ -278,8 +278,8 @@ nav.navbar {
   background-position: bottom;
   background-attachment: fixed;
   min-height: 75vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(imgs/1037.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(imgs/IMG_1041.jpg);
 }
 
 .home-header p {
