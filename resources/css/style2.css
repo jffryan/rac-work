@@ -538,3 +538,7 @@ footer {
 .linkedin:active {
   color: #0077b5;
 }
+
+.border-1px {
+  border: 1px solid #333;
+}
