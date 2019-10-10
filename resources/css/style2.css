@@ -5,9 +5,15 @@
 html,
 body {
   background-color: #fff;
+<<<<<<< HEAD
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
+=======
+  color: #333;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 18px;
+>>>>>>> 33667fac31c3ef3c74ab2ff40b4445b8bbe4769c
   font-weight: 300;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -93,7 +99,11 @@ h1 {
 }
 
 .h1-contact {
+<<<<<<< HEAD
   color: #555;
+=======
+  color: #333;
+>>>>>>> 33667fac31c3ef3c74ab2ff40b4445b8bbe4769c
 }
 
 h2 {
@@ -143,7 +153,11 @@ h3 {
 }
 
 .link-container a {
+<<<<<<< HEAD
   color: #555;
+=======
+  color: #333;
+>>>>>>> 33667fac31c3ef3c74ab2ff40b4445b8bbe4769c
 }
 
 .small-p {
@@ -217,11 +231,19 @@ input[type="submit"] {
 
 .icon-step {
   font-size: 140%;
+<<<<<<< HEAD
   color: #555;
 }
 
 .quote-icon {
   color: #555;
+=======
+  color: #333;
+}
+
+.quote-icon {
+  color: #333;
+>>>>>>> 33667fac31c3ef3c74ab2ff40b4445b8bbe4769c
 }
 
 /* ----------------------------- */
@@ -245,8 +267,14 @@ nav.navbar {
 }
 
 .main-nav li a:link,
+<<<<<<< HEAD
 .main-nav li a:visited {
   color: #555;
+=======
+.main-nav li a:visited,
+.main-nav li a:focus {
+  color: #333;
+>>>>>>> 33667fac31c3ef3c74ab2ff40b4445b8bbe4769c
   font-weight: 400;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;

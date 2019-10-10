@@ -19,9 +19,15 @@ if ($contentType === "application/json") {
 
 
 // an email address that will be in the From field of the email.
+<<<<<<< HEAD
 $from = 'Demo contact form <admin@confrontingclimatecrisis.com>';
 // an email address that will receive the email with the output of the form
 $sendTo = 'Demo contact form <admin@confrontingclimatecrisis.com>';
+=======
+$from = 'Demo contact form <dispatch@resourceaircharter.com>';
+// an email address that will receive the email with the output of the form
+$sendTo = 'Demo contact form <dispatch@resourceaircharter.com>';
+>>>>>>> 33667fac31c3ef3c74ab2ff40b4445b8bbe4769c
 // subject of the email
 $subject = 'New message from quote form';
 // message that will be displayed when everything is OK :)

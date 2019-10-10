@@ -36,7 +36,7 @@
         .then(
           (document.getElementById(
             "quote-message"
-          ).innerHTML = `<div class="alert alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Message sent! We'll be in touch soon. </div>`)
+          ).innerHTML = `<div class="alert alert-dismissable border-1px"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Message sent! We'll be in touch soon. </div>`)
         )
         .catch(err => console.log("err: ", err));
     });
