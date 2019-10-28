@@ -41,7 +41,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="resources/css/simplelightbox.css" />
     <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+
     <script src="https://kit.fontawesome.com/c3ee91c358.js"></script>
   </head>
 
@@ -50,7 +52,7 @@
       <a class="navbar-brand" href="/"
         ><img
           class="navbar-logo"
-          src="resources/imgs/logo_alt.png"
+          src="resources/imgs/logo.jpg"
           alt="Resource Air Charter Logo"
       /></a>
 
@@ -153,22 +155,41 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h3 class="display-5 emphasis text-left">RAC90 is the GOAT</h3>
+            <h3 class="display-5 emphasis text-left">
+              A new innovation in cargo aviation
+            </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              voluptate laboriosam iusto, commodi adipisci beatae amet iste
-              ipsam quidem ea magni quis, error veniam nihil expedita totam
-              soluta nemo veritatis!
+              It's time for a new era of cargo aircraft. The RAC90 King Air
+              Cargo Conversion is the new, exclusive air utility tool for cargo
+              operators to reach their destinations faster and more
+              fuel-efficently than ever before.
             </p>
+            <ul>
+              <li>
+                Reinforced aircraft floor for stronger cargo storage.
+              </li>
+              <li>
+                58” aft cargo door for faster loading/unloading
+              </li>
+              <li>
+                Port side crew hatch
+              </li>
+              <li>
+                Unprecedented fuel efficiency by reducing up to 200 pounds from
+                equivalent Beechcraft King Air models
+              </li>
+            </ul>
           </div>
           <div class="col-md-6 pl-5">
-            <a href="#" class="information__link"
+            <a href="tel:615-278-9450" class="information__link"
               ><span
                 >Contact a Sales Rep<br />
                 Call (615) 278-9450</span
               ></a
             >
-            <a href="#" class="information__link"><span>Learn To Fly</span></a>
+            <a href="/careers" class="information__link"
+              ><span>Learn To Fly</span></a
+            >
             <a href="#" class="information__link"><span>Document</span></a>
             <a href="#" class="information__link"><span>Link</span></a>
           </div>
@@ -179,9 +200,35 @@
     <section class="rac90-panel">
       <div class="container">
         <div class="text-center text-white">
-          <h4>Lorem, ipsum dolor.</h4>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <h4>Push the limits of what's possible.</h4>
+          <h3>
+            With enhanced stability and fuel efficiency, the RAC90 is a new
+            opportunity for cargo operators to excel.
+          </h3>
         </div>
+      </div>
+    </section>
+
+    <section class="lightbox-gallery">
+      <div class="gallery">
+        <a href="/resources/imgs/rac90_full.jpg" class="big">
+          <img src="/resources/imgs/rac90_full.jpg" alt="fill" />
+        </a>
+        <a href="/resources/imgs/rac90_side.jpg" class="big">
+          <img src="/resources/imgs/rac90_side.jpg" alt="fill" />
+        </a>
+        <a href="/resources/imgs/rac90_cockpit.jpg" class="big">
+          <img src="/resources/imgs/rac90_cockpit.jpg" alt="fill" />
+        </a>
+        <a href="/resources/imgs/rac90_back.jpg" class="big">
+          <img src="/resources/imgs/rac90_back.jpg" alt="fill" />
+        </a>
+        <a href="/resources/imgs/rac90_front.jpg" class="big">
+          <img src="/resources/imgs/rac90_front.jpg" alt="fill" />
+        </a>
+        <a href="/resources/imgs/rac90_profile.jpg" class="big">
+          <img src="/resources/imgs/rac90_profile.jpg" alt="fill" />
+        </a>
       </div>
     </section>
 
@@ -196,9 +243,9 @@
           <div class="row justify-content-around align-items-center py-4">
             <div class="card-transparent col-lg-4">
               <img
-                src="resources/imgs/IMG_4885.jpg"
+                src="resources/imgs/rac90_side.jpg"
                 class="gallery rounded"
-                alt="wheel"
+                alt="side of a RAC90 plane"
               />
             </div>
             <div class="col-lg-5">
@@ -225,16 +272,16 @@
             </div>
             <div class="card-transparent col-lg-4">
               <img
-                src="resources/imgs/IMG_4932.jpg"
+                src="resources/imgs/rac90_profile.jpg"
                 class="gallery rounded"
-                alt="nose of plane"
+                alt="RAC90 plane in profile"
               />
             </div>
           </div>
           <div class="row justify-content-around align-items-center py-4">
             <div class="card-transparent col-lg-4">
               <img
-                src="resources/imgs/IMG_4892.jpg"
+                src="resources/imgs/rac90_back.jpg"
                 class="gallery rounded"
                 alt="plane cockpit"
               />
@@ -465,7 +512,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="quoteform.js"></script>
-    <script src="contact.js"></script>
+    <script src="/resources/js/contact.js"></script>
+    <script src="resources/js/simple-lightbox.js"></script>
+    <script>
+      $(function() {
+        const $gallery = $(".gallery a").simpleLightbox();
+      });
+    </script>
   </body>
 </html>

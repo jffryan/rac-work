@@ -57,6 +57,10 @@ ul {
   border: 1px solid #efefef;
 }
 
+.gray {
+  color: #333;
+}
+
 .card-transparent {
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -116,6 +120,10 @@ h2::after {
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.uncenter {
+  text-align: left;
 }
 
 h3 {
@@ -287,7 +295,7 @@ nav.navbar {
   background-attachment: fixed;
   min-height: 75vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url(imgs/IMG_1041.jpg);
+    url(imgs/plane_sunset.jpg);
 }
 
 .hero__box {
@@ -340,7 +348,7 @@ nav.navbar {
 
 .tracking {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../imgs/tracker.jpg);
+    url(imgs/tracker.jpg);
   min-height: 50vh;
   background-attachment: fixed;
   background-size: cover;
@@ -350,6 +358,121 @@ nav.navbar {
 
 .services__right {
   justify-self: flex-end;
+}
+
+.quotes-carousel-container {
+  min-height: 20em;
+  margin: 0 auto;
+  position: relative;
+  width: 30em;
+  vertical-align: middle;
+}
+
+.quotes-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.quote {
+  cursor: pointer;
+  left: 50%;
+  list-style: none;
+  margin: 8em auto 4em;
+  opacity: 0;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(calc(100% + 12em), -50%) scale(0.6);
+  transform: translate(calc(100% + 12em), -50%) scale(0.6);
+  -webkit-transition: opacity 0.5s 0.6s ease-out,
+    -webkit-transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 0.5s 0.6s ease-out,
+    -webkit-transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.5s 0.6s ease-out;
+  transition: transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.5s 0.6s ease-out,
+    -webkit-transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  width: 16em;
+}
+
+.quote-text {
+  padding-top: 16px;
+}
+
+.quote.previous {
+  opacity: 0.5;
+  -webkit-transform: translate(-150%, -50%) scale(0.8);
+  transform: translate(-150%, -50%) scale(0.8);
+}
+
+.quote.current {
+  cursor: default;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.quote.next {
+  opacity: 0.5;
+  -webkit-transform: translate(50%, -50%) scale(0.8);
+  transform: translate(50%, -50%) scale(0.8);
+}
+
+.quote.left {
+  -webkit-transform: translate(calc(-150% - 12em), -50%) scale(0.6);
+  transform: translate(calc(-150% - 12em), -50%) scale(0.6);
+}
+
+/* styling pips */
+
+.quotes-carousel-pips {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.quotes-carousel-pips ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.pip {
+  background: #888;
+  border: 2px solid #555;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  margin: 0 0.1em;
+  padding: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.8s cubic-bezier(0, 1, 0.3, 1);
+  transition: all 0.8s cubic-bezier(0, 1, 0.3, 1);
+  width: 20px;
+}
+
+.pip.previous,
+.pip.next {
+  background: #ccc;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.pip.current {
+  background: #fff;
+  cursor: default;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.pip:not(.current):hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 /* ----------------------------- */
@@ -362,7 +485,7 @@ nav.navbar {
   background-attachment: fixed;
   min-height: 75vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url(../imgs/IMG_4906.jpg);
+    url(../imgs/rac90_front.jpg);
   display: flex;
   align-items: center;
 }
@@ -429,7 +552,7 @@ nav.navbar {
   background-position: bottom;
   min-height: 55vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(../imgs/plane-rear.jpg);
+    url(imgs/plane_rear.jpg);
   display: flex;
   align-items: center;
 }
@@ -438,13 +561,35 @@ nav.navbar {
   font-weight: 600;
 }
 
+.lightbox-gallery .gallery {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.lightbox-gallery .gallery a:first-child {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.lightbox-gallery .gallery a:nth-child(2) {
+  grid-column: 3/5;
+}
+
+.lightbox-gallery .gallery img,
+.lightbox-gallery .gallery a {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ----------------------------- */
 /* Special Missions */
 /* ----------------------------- */
 
 .special-missions {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(imgs/plane.jpg);
+    url(imgs/runway.jpg);
   min-height: 50vh;
   background-size: cover;
   background-position: 0% 60%;
@@ -538,7 +683,7 @@ nav.navbar {
 
 .contact-us {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(imgs/control-room-2.jpg);
+    url(imgs/control-room.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -641,9 +786,4 @@ footer {
 
 .border-1px {
   border: 1px solid #333;
-}
-
-.sticky {
-  position: sticky;
-  top: 20px;
 }
