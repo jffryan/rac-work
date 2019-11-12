@@ -22,8 +22,8 @@ div {
 }
 
 hr {
-  color: #4c6631;
-  border: 1px solid #4c6631;
+  color: #dbb827;
+  border: 1px solid #dbb827;
   width: 50%;
   margin-right: 50%;
 }
@@ -97,7 +97,7 @@ h1 {
 .alt-h1::after {
   display: block;
   height: 2px;
-  background-color: #4c6631;
+  background-color: #dbb827;
   content: "";
   width: 100px;
   margin: 0 auto;
@@ -120,7 +120,7 @@ h2 {
 h2::after {
   display: block;
   height: 2px;
-  background-color: #4c6631;
+  background-color: #dbb827;
   content: "";
   width: 100px;
   margin: 0 auto;
@@ -146,7 +146,7 @@ h3 {
 }
 
 .emphasis {
-  color: #4c6631;
+  color: #dbb827;
   letter-spacing: 2px;
   font-weight: 400;
 }
@@ -190,16 +190,16 @@ h3 {
 }
 
 .btn-primary {
-  background-color: #4c6631;
-  border: 1px solid #4c6631;
+  background-color: #dbb827;
+  border: 1px solid #dbb827;
   color: #fff;
   margin-right: 15px;
 }
 
 .btn-outline-primary {
-  border: 1px solid #4c6631;
+  border: 1px solid #dbb827;
   background-color: #fff;
-  color: #4c6631;
+  color: #dbb827;
 }
 
 .btn-primary:hover,
@@ -208,8 +208,8 @@ h3 {
 .btn-outline-primary:active,
 input[type="submit"]:hover,
 input[type="submit"]:active {
-  background-color: #232e18;
-  border: 1px solid #232e18;
+  background-color: #968451;
+  border: 1px solid #968451;
 }
 
 #submit-button {
@@ -217,8 +217,8 @@ input[type="submit"]:active {
 }
 
 input[type="submit"] {
-  background-color: #4c6631;
-  border: 1px solid #4c6631;
+  background-color: #dbb827;
+  border: 1px solid #dbb827;
   color: #fff;
 }
 
@@ -229,7 +229,7 @@ input[type="submit"] {
 .icon-big {
   font-size: 300%;
   display: block;
-  color: #4c6631;
+  color: #dbb827;
   margin: 0 auto;
   margin-bottom: 10px;
   text-align: center;
@@ -280,7 +280,7 @@ nav.navbar {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #4c6631;
+  border-bottom: 2px solid #dbb827;
 }
 
 .home-logo {
@@ -288,6 +288,10 @@ nav.navbar {
   width: auto;
   float: left;
   margin-top: 20px;
+}
+
+.nav-item .btn {
+  border-bottom: 0 !important;
 }
 
 /* ----------------------------- */
@@ -319,14 +323,19 @@ nav.navbar {
 }
 
 .service__link {
-  color: #333;
   text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.service__link:hover {
+  color: #dbb827;
 }
 
 .service__link:hover,
 .service__link:focus,
 .service__link:active {
-  color: #4c6631;
+  color: #dbb827;
   text-decoration: none;
 }
 
@@ -489,11 +498,19 @@ nav.navbar {
 /* RAC90 Page */
 /* ----------------------------- */
 
-.head-demo {
+.rac90-hero {
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  min-height: 75vh;
+  min-height: 55vh;
+  background-position: 60%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../imgs/rac90_profile.jpg);
+  color: #fff;
+}
+
+.large-panel {
+  background-size: cover;
+  background-position: 40%;
+  min-height: 55vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url(../imgs/rac90_front.jpg);
   display: flex;
@@ -504,7 +521,7 @@ nav.navbar {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.head-demo .row {
+.large-panel .row {
   justify-content: flex-end;
 }
 
@@ -513,10 +530,10 @@ nav.navbar {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  background-color: #4c6631;
+  background-color: #dbb827;
   padding: 0.5rem 0.75rem;
   margin: 0.5rem 0;
-  border: 1px solid #4c6631;
+  border: 1px solid #dbb827;
   border-radius: 4px;
   text-transform: uppercase;
   transition: all 0.4s;
@@ -524,10 +541,10 @@ nav.navbar {
 }
 
 .information__link:hover {
-  color: #4c6631;
+  color: #dbb827;
   background-color: #fff;
   text-decoration: none;
-  border: 1px solid #4c6631;
+  border: 1px solid #dbb827;
 }
 
 .information__link span {
@@ -645,7 +662,7 @@ nav.navbar {
   width: 150px;
   background-size: cover;
   margin-bottom: 20px;
-  border: 2px solid #232e18;
+  border: 2px solid #968451;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -709,7 +726,7 @@ nav.navbar {
 
 .form-title {
   text-align: center;
-  color: #4c6631;
+  color: #dbb827;
   font-weight: 400;
 }
 
@@ -732,7 +749,7 @@ footer {
 }
 
 .page-footer {
-  background-color: #232e18;
+  background-color: #4d4637;
 }
 
 .copyright {
@@ -796,4 +813,68 @@ footer {
 
 .border-1px {
   border: 1px solid #333;
+}
+
+.logo-dummy {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.get-quote-button {
+  position: fixed;
+  right: 100px;
+  bottom: 80px;
+  z-index: 5;
+}
+
+.get-quote-btn {
+  height: 70px;
+  width: 110px;
+  border: 0;
+  background: #dbb827;
+  box-shadow: 0 0 3px 3px #dbb72736;
+}
+
+.get-quote-btn img {
+  height: 30%;
+  width: auto;
+}
+
+.service__list {
+  list-style: none;
+}
+
+/* TESTING */
+
+.projects-section {
+  padding: 5rem 0;
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+.projects-section img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #dbb827;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+.bg-black {
+  background-color: #4d4637 !important;
 }

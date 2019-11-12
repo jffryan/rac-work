@@ -59,9 +59,7 @@
 
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="tel:1-615-278-9450"
-            ><strong>(615) 278-9450</strong></a
-          >
+          <a class="nav-link" href="/"><strong>Resource Air Charter</strong></a>
         </li>
       </ul>
       <button
@@ -93,13 +91,61 @@
             <a class="nav-link" href="contact">Contact</a>
           </li>
           <li class="nav-item px-2">
-            <a class="btn btn-primary" href="tel:1-615-278-9450">Call Now</a>
+            <a class="btn btn-primary" href="tel:1-615-278-9450"
+              >(615) 278-9450</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
     <section id="head" class="head">
+      <div class="jumbotron jumbotron-fluid home-hero">
+        <div class="container pt-5">
+          <h1 class="text-center">
+            Guaranteed to get you there first with the most.
+          </h1>
+          <div
+            class="row justify-content-center align-items-center text-center pt-5"
+          >
+            <div class="col-lg-5 p-4 m-4">
+              <a href="/cargo-services" class=""
+                ><img
+                  class="logo-dummy text-center"
+                  src="resources/imgs/logo.jpg"
+                  alt="Resource Air Charter Logo"
+                />
+              </a>
+              <h4 class="hero__subtitle text-white">
+                Air Cargo On Demand
+              </h4>
+              <p class="text-white">
+                We help businesses avoid downtime and save millions of dollars
+                with rapid response air charter services.
+              </p>
+            </div>
+            <div class="col-lg-5 p-4 m-4">
+              <a href="/rac90" class=""
+                ><img
+                  class="logo-dummy text-center"
+                  src="resources/imgs/logo.jpg"
+                  alt="Resource Air Charter Logo"
+                />
+              </a>
+              <h4 class="hero__subtitle text-white">
+                Resource Air Conversions
+              </h4>
+              <p class="text-white">
+                Discover the latest in air cargo utility with the RAC90, the
+                world's first cargo plane built by cargo operators.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTING ABOVE COMPARED TO BELOW -->
+    <!-- <section id="head" class="head">
       <div class="jumbotron jumbotron-fluid home-hero">
         <div class="container pt-5">
           <h1 class="text-center">
@@ -129,179 +175,238 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="get-quote" class="get-quote py-4">
-      <div class="container">
-        <div class="form-container">
-          <div id="quote-message"></div>
-          <form id="what-form">
-            <h5 class="form-title py-3">Get A Quote</h5>
-            <div class="form-body row">
-              <div class="form-group col-md-4">
-                <label for="name">Name: </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Your Name"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="email">Email Address: </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="tel">Phone Number: </label>
-                <input
-                  id="tel"
-                  name="tel"
-                  type="tel"
-                  placeholder="Phone"
-                  class="form-control"
-                />
-              </div>
-            </div>
-            <div
-              class="form-group row justify-content-between align-items-center"
+    <section class="get-quote-button">
+      <button
+        type="button"
+        class="get-quote-btn"
+        data-toggle="modal"
+        data-target="#getQuoteModal"
+      >
+        Get Quote <br />
+        <!-- <img src="resources/imgs/icons/airplane.png" alt="airplane icon" /> -->
+      </button>
+    </section>
+    <div
+      class="modal fade"
+      id="getQuoteModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="getQuoteLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="getQuoteLabel">Get A Quote</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
-              <div class="col-lg-8">
-                <div class="form-check form-check-inline">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="quote-message"></div>
+            <form id="what-form">
+              <div class="form-body row">
+                <div class="form-group col-md-4">
+                  <label for="name">Name: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="cargo-services"
-                    id="cargo-services"
-                    value="cargo-services"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="cargo-services"
-                    >Cargo Services</label
-                  >
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-group col-md-4">
+                  <label for="email">Email Address: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="door-to-door"
-                    id="jit-services"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="door-to-door"
-                    >Door-to-Door Handling</label
-                  >
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-group col-md-4">
+                  <label for="tel">Phone Number: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="special-services"
-                    name="special-services"
+                    id="tel"
+                    name="tel"
+                    type="tel"
+                    placeholder="Phone"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="special-services"
-                    >Special Missions</label
-                  >
                 </div>
               </div>
-              <div class="col-lg-2">
-                <button id="submit-button" class="btn btn-outline-primary">
-                  Get Quote
-                </button>
+              <div
+                class="form-group row justify-content-between align-items-center"
+              >
+                <div class="col-lg-8">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="cargo-services"
+                      id="cargo-services"
+                      value="cargo-services"
+                    />
+                    <label class="form-check-label" for="cargo-services"
+                      >Cargo Services</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="door-to-door"
+                      id="door-to-door"
+                    />
+                    <label class="form-check-label" for="door-to-door"
+                      >Door-to-Door Handling</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="special-services"
+                      name="special-services"
+                    />
+                    <label class="form-check-label" for="special-services"
+                      >Special Missions</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="submit-button" class="btn btn-primary">
+              Get Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="text-center">
+            <h2>Rapid Air Cargo Services</h2>
+            <p class="long-copy">
+              With over 20 years of aviation experience, we've shipped
+              everything from disaster relief supplies in Puerto Rico to live
+              sharks in Las Vegas. We understand that no two shipments are ever
+              the same. Call us today to learn why so many businesses trust Resource Air Charter to guarantee
+              the mission success of their charter delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="resources/css/imgs/tracker.jpg"
+              alt="cargo tracking service screenshot"
+            />
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4>
+                    <a href="/cargo-services" class="service__link"
+                      >Cargo Services</a
+                    >
+                  </h4>
+                  <ul class="service__list text-white-50">
+                    <li>JIT Shipping</li>
+                    <li>AOG Delivery</li>
+                    <li>Organ Transplant</li>
+                    <li>Currency Delivery</li>
+                  </ul>
+                  <hr class="d-none d-lg-block mb-0 mr-0" />
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="section-services" class="section-services py-4">
-      <div class="container pb-5">
-        <h2>Our Services</h2>
-        <p class="long-copy">
-          With over 20 years of aviation experience, we've shipped everything
-          from disaster relief supplies in Puerto Rico to live sharks in Las
-          Vegas. We understand that no two shipments are ever the same. Call us
-          today to discuss how we can help you guarantee the mission success of
-          your next charter delivery.
-        </p>
-      </div>
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-4">
-            <h3 class="text-left bold">
-              <a href="/cargo-services" class="service__link">Cargo Services</a>
-            </h3>
-            <h4 class="sub-head">JIT Shipping</h4>
-            <h4 class="sub-head">AOG Delivery</h4>
-            <h4 class="sub-head">Organ Transplant</h4>
-            <h4 class="sub-head">Currency Delivery</h4>
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="resources/imgs/plane_reapirs.jpg"
+              alt="front of a RAC90 plane"
+            />
           </div>
-          <div class="col-md-4">
-            <h3 class="text-left bold">
-              <a href="/rac90" class="service__link">Fleet Services</a>
-            </h3>
-            <h4 class="sub-head">RAC90 Plane Conversions</h4>
-            <h4 class="sub-head">RAC90 Maintenance</h4>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-left bold">
-              <a href="/special-missions" class="service__link"
-                >Special Missions</a
-              >
-            </h3>
-            <h4 class="sub-head">Patient Transport</h4>
-            <h4 class="sub-head">Disaster Relief</h4>
-            <h4 class="sub-head">Government Contractors</h4>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-left"
+                >
+                  <h4>
+                    <a href="/rac90" class="service__link">Fleet Services</a>
+                  </h4>
+                  <ul class="service__list text-white-50">
+                    <li>RAC90 Plane Conversions</li>
+                    <li>RAC90 Maintenance</li>
+                  </ul>
+                  <hr class="d-none d-lg-block mb-0 ml-0" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container text-center pt-4">
-        <a href="tel:1-615-278-9450" class="btn btn-primary">Call Now</a>
-      </div>
-    </section>
 
-    <section id="section-plan" class="bg-gray py-5">
-      <div class="container">
-        <h2>How It Works</h2>
-        <div class="row align-items-center justify-content-center py-3">
-          <h3 class="sub-head">
-            Call us 24/7 to speak with our flight operations located in Smyrna,
-            TN
-          </h3>
-        </div>
-        <div class="row text-center py-3">
-          <div class="col-md-4">
-            <h5 class="text-muted step">Step 1</h5>
-            <p>
-              Call our 24/7 flight operations operator to discuss your air
-              charter needs; including freight type, weight, destination, and
-              other job specifications.
-            </p>
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="resources/css/imgs/runway.jpg"
+              alt="View of runway from cockpit at night"
+            />
           </div>
-          <div class="col-md-4">
-            <h5 class="text-muted step">Step 2</h5>
-            <p>
-              Our planes will leave within an hour of your order for your point
-              of departure.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h5 class="text-muted step">Step 3</h5>
-            <p>
-              Our operators provide you with up-to-date mission communication
-              with every step of the way, from the air to the door.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="py-4 justify-content-center">
-            <a href="tel:1-615-278-9450" class="btn btn-primary">Call Now</a>
-            <a href="/contact" class="btn btn-outline-primary">Learn More</a>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4>
+                    <a href="/special-missions" class="service__link"
+                      >Special Missions</a
+                    >
+                  </h4>
+                  <ul class="service__list text-white-50">
+                    <li>Patient Transport</li>
+                    <li>Disaster Relief</li>
+                    <li>Government Contractors</li>
+                  </ul>
+                  <hr class="d-none d-lg-block mb-0 mr-0" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -310,7 +415,7 @@
     <section id="section-features" class="section-features py-5">
       <div class="container">
         <div class="container">
-          <h2>For when <span class="emphasis">timing is everything</span></h2>
+          <h2><span class="emphasis">For when timing is everything</span></h2>
           <div class="row justify-content-center pb-5">
             <p class="long-copy">
               Why miss another critical delivery, another JIT shipment, or
@@ -367,6 +472,48 @@
                 shipment's location to you every step of the way.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-plan" class="bg-gray py-5">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="row align-items-center justify-content-center py-3">
+          <h3 class="sub-head">
+            Call us 24/7 to speak with our flight operations located in Smyrna,
+            TN
+          </h3>
+        </div>
+        <div class="row text-center py-3">
+          <div class="col-md-4">
+            <h5 class="text-muted step">Step 1</h5>
+            <p>
+              Call our 24/7 flight operations operator to discuss your air
+              charter needs; including freight type, weight, destination, and
+              other job specifications.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-muted step">Step 2</h5>
+            <p>
+              Our planes will leave within an hour of your order for your point
+              of departure.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-muted step">Step 3</h5>
+            <p>
+              Our operators provide you with up-to-date mission communication
+              with every step of the way, from the air to the door.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="py-4 justify-content-center">
+            <a href="tel:1-615-278-9450" class="btn btn-primary">Call Now</a>
+            <a href="/contact" class="btn btn-outline-primary">Learn More</a>
           </div>
         </div>
       </div>

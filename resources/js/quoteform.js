@@ -38,6 +38,11 @@
             "quote-message"
           ).innerHTML = `<div class="alert alert-dismissable border-1px"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Message sent! We'll be in touch soon. </div>`)
         )
-        .catch(err => console.log("err: ", err));
+        .catch(
+          err =>
+            (document.getElementById(
+              "quote-message"
+            ).innerHTML = `<div class="alert alert-dismissable border-1px"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>There was an error processing your request. Please try again. </div>`)
+        );
     });
 })();
