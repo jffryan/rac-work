@@ -912,3 +912,9 @@ footer {
 /* .bg-black {
   background-color: #4d4637 !important;
 } */
+
+.news-logo {
+  height: 100px;
+  width: auto;
+  margin-left: 50px;
+}
