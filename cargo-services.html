@@ -42,7 +42,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="carousel.css" type="text/css" />
     <script src="https://kit.fontawesome.com/c3ee91c358.js"></script>
   </head>
   <body>
@@ -57,7 +56,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="tel:1-615-278-9450"
-            ><strong>(615) 278-9450</strong></a
+            ><strong>Resource Air Charter</strong></a
           >
         </li>
       </ul>
@@ -111,98 +110,134 @@
       </div>
     </section>
 
-    <section id="get-quote" class="get-quote py-4">
-      <div class="container">
-        <div class="form-container">
-          <div id="quote-message"></div>
-          <form id="what-form">
-            <h5 class="form-title py-3">Get A Quote</h5>
-            <div class="form-body row">
-              <div class="form-group col-md-4">
-                <label for="name">Name: </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Your Name"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="email">Email Address: </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="tel">Phone Number: </label>
-                <input
-                  id="tel"
-                  name="tel"
-                  type="tel"
-                  placeholder="Phone"
-                  class="form-control"
-                />
-              </div>
-            </div>
-            <div
-              class="form-group row justify-content-between align-items-center"
+    <section class="get-quote-button">
+      <button
+        type="button"
+        class="get-quote-btn"
+        data-toggle="modal"
+        data-target="#getQuoteModal"
+      >
+        Get Quote <br />
+      </button>
+    </section>
+    <div
+      class="modal fade"
+      id="getQuoteModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="getQuoteLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="getQuoteLabel">Get A Quote</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
-              <div class="col-lg-8">
-                <div class="form-check form-check-inline">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="quote-message"></div>
+            <form id="what-form">
+              <div class="form-body row">
+                <div class="form-group col-md-4">
+                  <label for="name">Name: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="cargo-services"
-                    id="cargo-services"
-                    value="cargo-services"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="cargo-services"
-                    >Cargo Services</label
-                  >
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-group col-md-4">
+                  <label for="email">Email Address: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="door-to-door"
-                    id="jit-services"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="door-to-door"
-                    >Door-to-Door Handling</label
-                  >
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-group col-md-4">
+                  <label for="tel">Phone Number: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="special-services"
-                    name="special-services"
+                    id="tel"
+                    name="tel"
+                    type="tel"
+                    placeholder="Phone"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="special-services"
-                    >Special Missions</label
-                  >
                 </div>
               </div>
-              <div class="col-lg-2">
-                <button id="submit-button" class="btn btn-outline-primary">
-                  Get Quote
-                </button>
+              <div
+                class="form-group row justify-content-between align-items-center"
+              >
+                <div class="col-lg-8">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="cargo-services"
+                      id="cargo-services"
+                      value="cargo-services"
+                    />
+                    <label class="form-check-label" for="cargo-services"
+                      >Cargo Services</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="door-to-door"
+                      id="door-to-door"
+                    />
+                    <label class="form-check-label" for="door-to-door"
+                      >Door-to-Door Handling</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="special-services"
+                      name="special-services"
+                    />
+                    <label class="form-check-label" for="special-services"
+                      >Special Missions</label
+                    >
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="submit-button" class="btn btn-primary">
+              Get Quote
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section id="section-features-2" class="section-features-2 my-5">
       <div class="container">
         <div class="container">
-          <h2>For when <span class="emphasis">timing is everything</span></h2>
+          <h2>For when timing is everything</h2>
           <div class="row justify-content-center">
             <div class="col-lg-9">
               <p class="long-copy">
@@ -216,6 +251,8 @@
           </div>
         </div>
         <section class="quotes-carousel-container">
+          <!-- <div class="left-carousel-arrow">&#x3c;</div>
+          <div class="right-carousel-arrow">&#x3e;</div> -->
           <ul class="quotes-carousel text-center" id="quotes-carousel">
             <li class="quote previous">
               <img
@@ -292,9 +329,9 @@
           When you contract us to ship urgent cargo needs, we understand you're
           risking your time and money. That's why it's important to us to manage
           your shipment with speed and precision. With our enhanced
-          Eye-In-The-Sky flight systems, you can track your package every step
-          of the way. From the moment it's loaded onto our aircraft until the
-          moment it lands at your destination our flight control specialists
+          Eye-In-The-Sky flight systems, we are able to track your package every
+          step of the way. From the moment it's loaded onto our aircraft until
+          the moment it lands at your destination our flight control specialists
           manage the exact coordinates of your cargo.
         </p>
         <div class="container">
@@ -311,14 +348,14 @@
           <div class="col-lg-6">
             <h2>
               The efficiency you expect,<br />
-              <span class="emphasis">The speed you deserve.</span>
+              The speed you deserve.
             </h2>
             <p>
               When you call about an urgent mission at 3AM, we understand you
               don't have time to talk to a machine or listen to excuses. That's
-              why our flight operations is staffed 24/7 ready to serve your most
-              important air cargo needs. Resource Air Charter will get you there
-              first with the most &mdash; guaranteed.
+              why our flight operations department is staffed 24/7 ready to
+              serve your most important air cargo needs. Resource Air Charter
+              will get you there first with the most &mdash; guaranteed.
             </p>
           </div>
           <div class="col-lg-5 text-center">
@@ -404,101 +441,6 @@
 
     <!-- FOOTER -->
 
-    <section class="section-contact my-5 pb-5">
-      <div class="container">
-        <h2>How Can We Help?</h2>
-        <div class="row">
-          <div class="col-lg-12">
-            <form
-              id="contact-form"
-              method="POST"
-              action="contact.php"
-              role="form"
-              class="border rounded p-4"
-            >
-              <div class="messages"></div>
-              <div class="controls">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label for="contact_name">Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="contact_name"
-                        placeholder="Your name"
-                        class="form-control mt-2"
-                        required="required"
-                        data-error="Name is required."
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label for="contact_email">Email</label>
-                      <input
-                        type="email"
-                        name="email"
-                        id="contact_email"
-                        placeholder="Your email"
-                        class="form-control mt-2"
-                        required="required"
-                        data-error="Email is required."
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label for="contact_tel">Phone Number</label>
-                      <input
-                        id="contact_tel"
-                        name="tel"
-                        type="tel"
-                        placeholder="Phone"
-                        class="form-control mt-2"
-                        required="required"
-                        data-error="Phone is required."
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label for="contact_subject">Subject</label>
-                      <input
-                        type="text"
-                        name="subject"
-                        id="contact_subject"
-                        placeholder="Subject"
-                        class="form-control mt-2"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Additional Message (Optional)"
-                        class="form-control mt-2"
-                        rows="3"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12 mt-3">
-                    <input type="submit" value="Send" class="form-control" />
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="page-footer pt-4">
       <div class="container">
         <div class="row justify-content-between">
@@ -529,6 +471,11 @@
             </p>
             <p class="footer-text">
               Production Manufacturers Authority PQ04405CE
+            </p>
+            <p class="footer-text">STC# SA159CH, SA1624GL</p>
+            <p class="footer-text">
+              All air charters not flown by RAC are arranged with FAA approved
+              135 and 121 carriers.
             </p>
           </div>
           <div class="col-md-4">

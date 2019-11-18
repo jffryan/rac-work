@@ -5,6 +5,8 @@ $(function() {
   var nextIndex = 2;
   var lastIndex = $("#quotes-carousel").find(".quote").length - 1;
 
+  const left = document.getElementsByClassName("left-carousel-arrow");
+
   // Actions to listen for
   $("#quotes-carousel").on("click", ".previous", showQuote);
   $("#quotes-carousel").on("click", ".next", showQuote);

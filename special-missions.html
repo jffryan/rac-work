@@ -57,7 +57,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="tel:1-615-278-9450"
-            ><strong>(615) 278-9450</strong></a
+            ><strong>Resource Air Charter</strong></a
           >
         </li>
       </ul>
@@ -112,93 +112,129 @@
       </div>
     </section>
 
-    <section id="get-quote" class="get-quote py-4">
-      <div class="container">
-        <div class="form-container">
-          <div id="quote-message"></div>
-          <form id="what-form">
-            <h5 class="form-title py-3">Get A Quote</h5>
-            <div class="form-body row">
-              <div class="form-group col-md-4">
-                <label for="name">Name: </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Your Name"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="email">Email Address: </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="tel">Phone Number: </label>
-                <input
-                  id="tel"
-                  name="tel"
-                  type="tel"
-                  placeholder="Phone"
-                  class="form-control"
-                />
-              </div>
-            </div>
-            <div
-              class="form-group row justify-content-between align-items-center"
+    <section class="get-quote-button">
+      <button
+        type="button"
+        class="get-quote-btn"
+        data-toggle="modal"
+        data-target="#getQuoteModal"
+      >
+        Get Quote <br />
+      </button>
+    </section>
+    <div
+      class="modal fade"
+      id="getQuoteModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="getQuoteLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="getQuoteLabel">Get A Quote</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
-              <div class="col-lg-8">
-                <div class="form-check form-check-inline">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="quote-message"></div>
+            <form id="what-form">
+              <div class="form-body row">
+                <div class="form-group col-md-4">
+                  <label for="name">Name: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="cargo-services"
-                    id="cargo-services"
-                    value="cargo-services"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="cargo-services"
-                    >Cargo Services</label
-                  >
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-group col-md-4">
+                  <label for="email">Email Address: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="door-to-door"
-                    id="jit-services"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="door-to-door"
-                    >Door-to-Door Handling</label
-                  >
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-group col-md-4">
+                  <label for="tel">Phone Number: </label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="special-services"
-                    name="special-services"
+                    id="tel"
+                    name="tel"
+                    type="tel"
+                    placeholder="Phone"
+                    class="form-control"
                   />
-                  <label class="form-check-label" for="special-services"
-                    >Special Missions</label
-                  >
                 </div>
               </div>
-              <div class="col-lg-2">
-                <button id="submit-button" class="btn btn-outline-primary">
-                  Get Quote
-                </button>
+              <div
+                class="form-group row justify-content-between align-items-center"
+              >
+                <div class="col-lg-8">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="cargo-services"
+                      id="cargo-services"
+                      value="cargo-services"
+                    />
+                    <label class="form-check-label" for="cargo-services"
+                      >Cargo Services</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="door-to-door"
+                      id="door-to-door"
+                    />
+                    <label class="form-check-label" for="door-to-door"
+                      >Door-to-Door Handling</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="special-services"
+                      name="special-services"
+                    />
+                    <label class="form-check-label" for="special-services"
+                      >Special Missions</label
+                    >
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="submit-button" class="btn btn-primary">
+              Get Quote
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section id="section-features" class="section-features my-5 pb-5">
       <div class="container">
@@ -241,7 +277,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-around">
             <div class="col-md-4 mt-3 p-4">
               <img
                 src="resources/imgs/icons/airplane-w.png"
@@ -432,15 +468,20 @@
               </li>
             </ul>
             <p class="footer-text">
-              Hangar 10, Inc d/b/a Resource Air Charter per FAA Certificate
-              #LFBA048G
-            </p>
-            <p class="footer-text">
-              50 South Amelia Earheart Drive Brownsville, TX 78521
-            </p>
-            <p class="footer-text">
-              Production Manufacturers Authority PQ04405CE
-            </p>
+                Hangar 10, Inc d/b/a Resource Air Charter per FAA Certificate
+                #LFBA048G
+              </p>
+              <p class="footer-text">
+                50 South Amelia Earheart Drive Brownsville, TX 78521
+              </p>
+              <p class="footer-text">
+                Production Manufacturers Authority PQ04405CE
+              </p>
+              <p class="footer-text">STC# SA159CH, SA1624GL</p>
+              <p class="footer-text">
+                All air charters not flown by RAC are arranged with FAA approved
+                135 and 121 carriers.
+              </p>
           </div>
           <div class="col-md-4">
             <h5>Links</h5>
