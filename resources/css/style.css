@@ -22,8 +22,8 @@ div {
 }
 
 hr {
-  color: #dbb827;
-  border: 1px solid #dbb827;
+  color: #cd6133;
+  border: 1px solid #cd6133;
   width: 50%;
   margin-right: 50%;
 }
@@ -97,7 +97,7 @@ h1 {
 .alt-h1::after {
   display: block;
   height: 2px;
-  background-color: #dbb827;
+  background-color: #cd6133;
   content: "";
   width: 100px;
   margin: 0 auto;
@@ -120,7 +120,7 @@ h2 {
 h2::after {
   display: block;
   height: 2px;
-  background-color: #dbb827;
+  background-color: #cd6133;
   content: "";
   width: 100px;
   margin: 0 auto;
@@ -146,7 +146,7 @@ h3 {
 }
 
 .emphasis {
-  color: #dbb827;
+  color: #cd6133;
   letter-spacing: 2px;
   font-weight: 400;
 }
@@ -191,16 +191,16 @@ h3 {
 }
 
 .btn-primary {
-  background-color: #dbb827;
-  border: 1px solid #dbb827;
+  background-color: #cd6133;
+  border: 1px solid #cd6133;
   color: #fff;
   margin-right: 15px;
 }
 
 .btn-outline-primary {
-  border: 1px solid #dbb827;
+  border: 1px solid #cd6133;
   background-color: transparent;
-  color: #dbb827;
+  color: #cd6133;
 }
 
 .btn-white {
@@ -219,8 +219,8 @@ h3 {
 .btn-white:active,
 input[type="submit"]:hover,
 input[type="submit"]:active {
-  background-color: #968451;
-  border: 1px solid #968451;
+  background-color: #b2542c;
+  border: 1px solid #b2542c;
   text-decoration: none;
   color: #fff;
   transition: 0.2s ease-in;
@@ -231,8 +231,8 @@ input[type="submit"]:active {
 }
 
 input[type="submit"] {
-  background-color: #dbb827;
-  border: 1px solid #dbb827;
+  background-color: #cd6133;
+  border: 1px solid #cd6133;
   color: #fff;
 }
 
@@ -243,7 +243,7 @@ input[type="submit"] {
 .icon-big {
   font-size: 300%;
   display: block;
-  color: #dbb827;
+  color: #cd6133;
   margin: 0 auto;
   margin-bottom: 10px;
   text-align: center;
@@ -294,7 +294,7 @@ nav.navbar {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #dbb827;
+  border-bottom: 2px solid #cd6133;
 }
 
 .home-logo {
@@ -343,13 +343,13 @@ nav.navbar {
 }
 
 .service__link:hover {
-  color: #dbb827;
+  color: #cd6133;
 }
 
 .service__link:hover,
 .service__link:focus,
 .service__link:active {
-  color: #dbb827;
+  color: #cd6133;
   text-decoration: none;
 }
 
@@ -560,10 +560,10 @@ nav.navbar {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  background-color: #dbb827;
+  background-color: #cd6133;
   padding: 0.5rem 0.75rem;
   margin: 0.5rem 0;
-  border: 1px solid #dbb827;
+  border: 1px solid #cd6133;
   border-radius: 4px;
   text-transform: uppercase;
   transition: all 0.4s;
@@ -571,10 +571,10 @@ nav.navbar {
 }
 
 .information__link:hover {
-  color: #dbb827;
+  color: #cd6133;
   background-color: #fff;
   text-decoration: none;
-  border: 1px solid #dbb827;
+  border: 1px solid #cd6133;
 }
 
 .information__link span {
@@ -692,7 +692,7 @@ nav.navbar {
   width: 150px;
   background-size: cover;
   margin-bottom: 20px;
-  border: 2px solid #968451;
+  border: 2px solid #cd6133;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -756,7 +756,7 @@ nav.navbar {
 
 .form-title {
   text-align: center;
-  color: #dbb827;
+  color: #cd6133;
   font-weight: 400;
 }
 
@@ -779,7 +779,7 @@ footer {
 }
 
 .page-footer {
-  background-color: #4d4637;
+  background-color: #24120a;
 }
 
 .copyright {
@@ -861,10 +861,11 @@ footer {
 }
 
 .get-quote-btn {
+  color: #fff;
   height: 35px;
   width: 130px;
   border: 0;
-  background: #dbb827;
+  background: #b2542c;
   box-shadow: 0 0 3px 3px #dbb72736;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -903,7 +904,7 @@ footer {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #dbb827;
+    border-color: #cd6133;
     border-width: 0.25rem;
     width: 30%;
   }
